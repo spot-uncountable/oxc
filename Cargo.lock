@@ -1710,6 +1710,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "oxc-htmlish-parser"
+version = "0.0.0"
+source = "git+https://github.com/oxc-project/oxc-htmlish-parser?rev=f39eda3e72a17f9f89964d70c7787a0ef31100e3#f39eda3e72a17f9f89964d70c7787a0ef31100e3"
+dependencies = [
+ "memchr",
+ "oxc_allocator",
+]
+
+[[package]]
 name = "oxc-markdown-parser"
 version = "0.0.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2126,6 +2135,23 @@ dependencies = [
  "oxc_formatter_tests",
  "oxc_span",
  "oxc_tasks_common",
+ "pico-args",
+]
+
+[[package]]
+name = "oxc_formatter_htmlish"
+version = "0.75.0"
+dependencies = [
+ "cow-utils",
+ "dragonbox_ecma",
+ "insta",
+ "memchr",
+ "oxc-htmlish-parser",
+ "oxc_allocator",
+ "oxc_diagnostics",
+ "oxc_formatter_core",
+ "oxc_formatter_tests",
+ "oxc_span",
  "pico-args",
 ]
 
