@@ -25816,7 +25816,7 @@ Negative Passed: 4653/4653 (100.00%)
  20 │ export * from './import-attribute-3_FIXTURE.js' with {
  21 │   type: 'json',
     ·   ──┬─
-    ·     ╰── `type` was first specified here
+    ·     ╰── `type` was already specified here
  22 │   'typ\u0065': ''
     ·   ─────┬─────
     ·        ╰── This key is repeated
@@ -25829,7 +25829,7 @@ Negative Passed: 4653/4653 (100.00%)
  21 │ import './import-attribute-2_FIXTURE.js' with {
  22 │   type: 'json',
     ·   ──┬─
-    ·     ╰── `type` was first specified here
+    ·     ╰── `type` was already specified here
  23 │   'typ\u0065': ''
     ·   ─────┬─────
     ·        ╰── This key is repeated
@@ -25842,7 +25842,7 @@ Negative Passed: 4653/4653 (100.00%)
  21 │ import x from './import-attribute-1_FIXTURE.js' with {
  22 │   type: 'json',
     ·   ──┬─
-    ·     ╰── `type` was first specified here
+    ·     ╰── `type` was already specified here
  23 │   'typ\u0065': ''
     ·   ─────┬─────
     ·        ╰── This key is repeated

@@ -1352,10 +1352,10 @@ parser_diagnostics! {
             .with_help("Wrap this with quotes")
     };
 
-    duplicate_import_attribute_key(name: &'a str, first_span: Span, duplicate_span: Span) => {
+    duplicate_import_attribute_key(name: &'a str, previous_span: Span, duplicate_span: Span) => {
         OxcDiagnostic::error(format!("Duplicate import attribute key `{name}`"))
             .with_labels([
-                first_span.label(format!("`{name}` was first specified here")),
+                previous_span.label(format!("`{name}` was already specified here")),
                 duplicate_span.label("This key is repeated"),
             ])
             .with_help("Each import attribute key must be unique")
